@@ -357,7 +357,6 @@ template {
 
 .header {
   background-color: #fff;
-  margin-top: 11px;
   margin-bottom: 69px;
 }
 
@@ -373,6 +372,10 @@ template {
           align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
+}
+
+.header__button {
+  display: none;
 }
 
 .navbar-menu {
@@ -565,6 +568,8 @@ template {
 
 .recommendations__image {
   margin-right: 15px;
+  width: 160px;
+  height: 238px;
 }
 
 .recommendations-wrapper {
@@ -585,7 +590,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 358px;
-  min-height: 260px;
+  height: 260px;
   padding: 11px 0 11px 11px;
   border: 1px solid #ECEEF2;
   border-radius: 8px;
@@ -601,10 +606,13 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .recommendations-info__title {
-  margin-top: 24px;
+  margin-top: 12px;
   margin-bottom: 16px;
   font-family: Roboto;
   font-style: normal;
@@ -704,6 +712,8 @@ template {
 
 .top__image {
   margin-right: 26px;
+  width: 120px;
+  height: 177px;
 }
 
 .top__card {
@@ -782,5 +792,276 @@ template {
   font-size: 16px;
   line-height: 22px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .recommendations {
+    margin-right: 0;
+  }
+  .recommendations-wrapper {
+    width: 640px;
+  }
+  .recommendations__card {
+    width: 312px;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recommendations__image {
+    width: 144px;
+    height: 214px;
+  }
+  .recommendations-info {
+    margin-right: 0;
+  }
+  .recommendations-info__title {
+    font-size: 19px;
+    margin-top: 5px;
+  }
+  .recommendations-info__button {
+    margin-right: 10px;
+  }
+  .top-wrapper {
+    width: 340px;
+  }
+  .top__card {
+    margin-bottom: 27px;
+  }
+  .top-info__title {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 775px;
+  }
+  .main__title {
+    margin-bottom: 14px;
+    font-size: 46px;
+  }
+  .main__author {
+    font-size: 18px;
+  }
+  .main-info {
+    width: 50%;
+    margin-right: 25px;
+  }
+  .main__description {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  .main__button {
+    padding: 12px 22px;
+    margin-right: 15px;
+    width: 47%;
+  }
+  .main__button--demo {
+    padding: 10px 22px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .main-photo {
+    width: 47%;
+    height: 522px;
+  }
+  .recommendations {
+    margin-right: 0;
+  }
+  .recommendations-wrapper {
+    width: 506px;
+  }
+  .recommendations__card {
+    width: 248px;
+    height: 210px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+  .recommendations__image {
+    width: 108px;
+    height: 164px;
+    margin-right: 10px;
+  }
+  .recommendations-info__title {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .recommendations-info__text {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .recommendations-info__price {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .recommendations-info__button {
+    padding: 5px 17px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  .top-wrapper {
+    width: 258px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .top__card {
+    padding-right: 0;
+    margin-bottom: 14px;
+    margin-right: 10px;
+  }
+  .top__image {
+    width: 97px;
+    height: 147px;
+    margin-right: 10px;
+  }
+  .top__button {
+    width: 100%;
+  }
+  .top-info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-info__title {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .top-info__price {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .top-info__button {
+    padding: 5px 17px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .navbar-menu__link--mr-1 {
+    margin-right: 20px;
+  }
+  .main-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-info {
+    margin-right: 18px;
+  }
+  .main__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .main__author {
+    font-size: 15px;
+  }
+  .main__description {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+  .main__button {
+    padding: 12px 12px;
+    width: 46%;
+    font-size: 12px;
+  }
+  .main__button--demo {
+    padding: 10px 12px;
+  }
+  .main-photo {
+    width: 47%;
+    height: 408px;
+  }
+  .main__image {
+    width: 175px;
+    height: 262px;
+  }
+}
+
+@media (max-width: 765px) {
+  body {
+    padding-top: 78px;
+  }
+  .header--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .header-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 22px;
+    height: 17px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .header-button__line {
+    width: 22px;
+    height: 2.2px;
+    background-color: #3A4C66;
+  }
+  .navbar {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    overflow: auto;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #ffffff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: 100%;
+    overflow: auto;
+  }
+  .navbar-menu__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .navbar-menu__link--mr-1 {
+    margin-right: 0;
+  }
+  .navbar--visible {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
